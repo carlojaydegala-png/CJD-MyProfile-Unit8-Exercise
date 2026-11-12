@@ -587,7 +587,9 @@ class _MyPicksTabState extends State<MyPicksTab> {
   @override
   void initState() {
     super.initState();
-    _loadPicks();
+    if (cmsSpace.isNotEmpty && cmsToken.isNotEmpty) {
+      _loadPicks();
+    }
   }
 
   void _loadPicks() {

@@ -12,9 +12,15 @@ import 'package:degala_unit8_exercise/main.dart';
 
 void main() {
   testWidgets('The app opens CJD Profile', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-     expect(find.text('Carlo Jay Degala'), findsOneWidget);
+    expect(
+      find.descendant(
+        of: find.byType(AppBar),
+        matching: find.text('Carlo Jay Degala'),
+      ),
+      findsOneWidget,
+    );
+    expect(find.text('Profile'), findsOneWidget);
   });
 }
