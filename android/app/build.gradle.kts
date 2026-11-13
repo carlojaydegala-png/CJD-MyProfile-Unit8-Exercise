@@ -14,7 +14,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.example.degala_unit8_exercise"
+    namespace = "com.example.degala_unit5_exercise"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
